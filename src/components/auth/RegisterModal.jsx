@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import Modal from "../Modal";
-import { auth } from "../../firebase-fig";
+import { auth } from "../../firebase";
 
 function RegisterModal({ isOpen, onClose, openLoginModal }) {
   const [email, setEmail] = useState("");
@@ -21,7 +21,7 @@ function RegisterModal({ isOpen, onClose, openLoginModal }) {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       setError(null);
-      onClose();
+      onClose(); // Close the modal on successful registration
     } catch (err) {
       setError(err.message);
     }
@@ -36,10 +36,7 @@ function RegisterModal({ isOpen, onClose, openLoginModal }) {
     <Modal isOpen={isOpen} onClose={onClose}>
       <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg overflow-hidden p-8">
         <h2 className="text-2xl font-bold mb-4 text-center text-black">
-          <span role="img" aria-label="key">
-            🔑
-          </span>
-          Register
+          🔑 Register
         </h2>
         <p className="text-center mb-4 text-black">Create a new account</p>
         <form onSubmit={handleSubmit}>
@@ -48,7 +45,7 @@ function RegisterModal({ isOpen, onClose, openLoginModal }) {
           </label>
           <input
             type="email"
-            className="w-full p-2 mb-4 border rounded text-black"
+            className="w-full p-2 mb-4 border rounded text-gray-700"
             placeholder="john.doe@example.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -59,7 +56,7 @@ function RegisterModal({ isOpen, onClose, openLoginModal }) {
           </label>
           <input
             type="password"
-            className="w-full p-2 mb-4 border rounded text-black"
+            className="w-full p-2 mb-4 border rounded text-gray-700"
             placeholder="*******"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -70,7 +67,7 @@ function RegisterModal({ isOpen, onClose, openLoginModal }) {
           </label>
           <input
             type="password"
-            className="w-full p-2 mb-4 border rounded text-black"
+            className="w-full p-2 mb-4 border rounded text-gray-700"
             placeholder="*******"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}

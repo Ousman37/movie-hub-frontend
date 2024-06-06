@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# MovieHub Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-18.3.1-blue)
+![Firebase](https://img.shields.io/badge/Firebase-10.12.2-orange)
+![Axios](https://img.shields.io/badge/Axios-1.7.2-blue)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.3-green)
+![React Router](https://img.shields.io/badge/React%20Router-6.23.1-red)
 
-## Available Scripts
+MovieHub is a web application that allows users to browse, search, and review movies. Users can also create an account, log in, and save their favorite movies.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [MovieHub Frontend](#moviehub-frontend)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Scripts](#scripts)
+  - [Dependencies](#dependencies)
+  - [DevDependencies](#devdependencies)
+  - [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Browse popular movies
+- Search for movies
+- View detailed information about each movie
+- Add movies to favorites
+- Submit reviews for movies
+- User authentication (sign up, log in, log out)
+- Responsive design
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To install and run the project locally, follow these steps:
 
-### `npm run build`
+1. **Clone the repository:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```sh
+    git clone https://github.com/your-username/movie-hub-frontend.git
+    cd movie-hub-frontend
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```sh
+    npm install
+    ```
 
-### `npm run eject`
+3. **Set up Firebase:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    - Create a Firebase project and add your web app.
+    - Copy your Firebase configuration and replace the placeholder in `src/firebase.js`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Start the development server:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```sh
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+- Open your browser and navigate to `http://localhost:3000` to view the app.
+- Use the search bar to find movies.
+- Click on a movie to view details.
+- Log in or sign up to add movies to your favorites and submit reviews.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Scripts
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Start:** `npm start` - Starts the development server.
+- **Build:** `npm run build` - Builds the app for production.
+- **Test:** `npm test` - Runs the test suite.
+- **Eject:** `npm run eject` - Ejects the Create React App configuration (this is a one-way operation).
 
-### Code Splitting
+## Dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React:** 18.3.1
+- **Firebase:** 10.12.2
+- **Axios:** 1.7.2
+- **React Icons:** 5.2.1
+- **React Modal:** 3.16.1
+- **React Responsive Carousel:** 3.2.23
+- **React Router DOM:** 6.23.1
+- **React Scripts:** 5.0.1
+- **Web Vitals:** 2.1.4
 
-### Analyzing the Bundle Size
+## DevDependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **Babel Plugin Proposal Private Property In Object:** 7.21.11
+- **Autoprefixer:** 10.4.19
+- **PostCSS:** 8.4.38
+- **TailwindCSS:** 3.4.3
 
-### Making a Progressive Web App
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.

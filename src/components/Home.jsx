@@ -75,7 +75,7 @@ function Home() {
   };
 
   return (
-    <div className="home-container px-4 lg:px-8 py-8 bg-gradient-to-br from-customDarkBlue via-customLightBlue to-customTeal min-h-screen">
+    <div className="home-container px-4 lg:px-8 py-8  min-h-screen">
       <SearchBar onSearch={handleSearch} />
       {error && <p className="text-red-500 mt-4">{error}</p>}
       <div className="content-section flex flex-col lg:flex-row lg:space-x-4 mt-8">

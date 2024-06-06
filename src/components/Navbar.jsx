@@ -1,4 +1,6 @@
 // src/components/Navbar.jsx
+
+
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useAuth } from "../context/AuthContext";
@@ -54,9 +56,6 @@ function Navbar({ toggleTheme, darkMode, openLoginModal, openRegisterModal }) {
           </a>
           {currentUser ? (
             <>
-              <span className="text-white text-lg">
-                Welcome, {currentUser.email}
-              </span>
               <LogoutButton />
             </>
           ) : (
@@ -117,9 +116,6 @@ function Navbar({ toggleTheme, darkMode, openLoginModal, openRegisterModal }) {
             </a>
             {currentUser ? (
               <>
-                <span className="block text-white text-lg mt-2">
-                  Welcome, {currentUser.email}
-                </span>
                 <LogoutButton />
               </>
             ) : (
@@ -146,3 +142,4 @@ function Navbar({ toggleTheme, darkMode, openLoginModal, openRegisterModal }) {
 }
 
 export default Navbar;
+

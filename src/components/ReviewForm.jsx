@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { getAuth } from "firebase/auth";
 import { collection, addDoc } from "firebase/firestore";
-import { db } from "../firebase-config";
+import { db } from "../firebase";
 
 function ReviewForm({ movieId }) {
   const [review, setReview] = useState("");

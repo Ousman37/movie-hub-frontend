@@ -8,13 +8,116 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  @apply bg-gradient-to-br from-customDarkBlue via-customLightBlue to-customTeal;
+}
+
 body.dark {
   @apply bg-gray-900 text-white;
 }
 
-/* .bg-gray-900 {
-  @apply bg-gray-900 text-white;
-} */
+
+/* Favorite button style */
+.simplefavorite-button {
+  position: relative;
+  cursor: pointer;
+  font-size: 15px;
+  height: 40px;
+  padding: 0px 52px 0px 12px;
+  color: #c0db2d;
+  background: transparent;
+  background-color: #3b1e3a;
+  border: 0;
+}
+.simplefavorite-button .text {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  margin-left: -50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  transition: all 200ms ease;
+}
+.simplefavorite-button:hover .text {
+  top: -40px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 200ms ease;
+}
+.simplefavorite-button i {
+  font-size: 20px;
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.simplefavorite-button.loading {
+  padding-right: 12px;
+}
+.simplefavorite-button.active {
+  background-color: #c0db2d;
+  color: #441f43;
+}
+.simplefavorite-button:focus,
+.simplefavorite-button:active {
+  outline: none;
+}
+
+
+
+
+
+/*Profile style */
+.bg-custom-gradient {
+  background: linear-gradient(to bottom right, #2c3e50, #3498db);
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.profile-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.profile-card h1,
+.profile-card h2 {
+  text-align: center;
+}
+
+.profile-card p {
+  text-align: center;
+}
+
+.activity-log,
+.favorite-movies {
+  margin-top: 20px;
+}
+
+
+
+
+
 
 .dark .bg-white {
   @apply bg-gray-800 text-white;

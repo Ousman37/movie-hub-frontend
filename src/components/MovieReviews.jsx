@@ -9,7 +9,7 @@ function MovieReviews({ movieId }) {
   useEffect(() => {
     const q = query(
       collection(db, "movies", movieId.toString(), "reviews"),
-      where("rating", ">", 3) // Add condition to use 'where'
+      where("rating", ">", 3) 
     );
     const unsubscribe = onSnapshot(q, (snapshot) => {
       const reviewsData = [];

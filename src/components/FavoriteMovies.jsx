@@ -27,28 +27,3 @@ const FavoriteMovies = ({ favoriteMovies }) => {
 };
 
 export default FavoriteMovies;
-
-// // src/components/FavoriteMovies.jsx
-// import React from "react";
-
-// const FavoriteMovies = ({ favoriteMovies }) => {
-//   return (
-//     <div className="text-center mt-4">
-//       <h2 className="text-xl font-bold mb-4">Favorite Movies</h2>
-//       <ul className="list-disc list-inside text-left">
-//         {favoriteMovies.length > 0 ? (
-//           favoriteMovies.map((movie, index) => (
-//             <li key={index} className="mb-2">
-//               {movie}
-//             </li>
-//           ))
-//         ) : (
-//           <li>No favorite movies added yet.</li>
-//         )}
-//       </ul>
-//     </div>
-//   );
-// };
-
-// export default FavoriteMovies;
-

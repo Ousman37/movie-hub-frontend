@@ -8,7 +8,7 @@ console.log("Environment Variables:", process.env);
 const firebaseConfig = {
   apiKey:
     process.env.REACT_APP_FIREBASE_API_KEY ||
-    "AIzaSyCX6RhHy0408Nd_3huNFydpENJThsaaCHA", // Default value for testing
+    "AIzaSyCX6RhHy0408Nd_3huNFydpENJThsaaCHA",
   authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,

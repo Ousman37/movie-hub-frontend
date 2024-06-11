@@ -1,10 +1,9 @@
-// src/components/Home.jsx
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "./SearchBar";
-import MovieCard from "./MovieCard"; // Import the MovieCard component
+import MovieCard from "./MovieCard"; 
 import { fetchMovies, fetchPopularMovies } from "../api/tmdb";
-import { db } from "../firebase"; // Import firebase config
+import { db } from "../firebase"; 
 import { useAuth } from "../context/AuthContext";
 import { collection, addDoc } from "firebase/firestore";
 import { Carousel } from "react-responsive-carousel";
@@ -31,16 +30,16 @@ function Home() {
   }, []);
 
   const handleSearch = async (query) => {
-    console.log(`Search query: ${query}`); // Debugging statement
+    console.log(`Search query: ${query}`); 
     try {
       const results = await fetchMovies(query);
-      console.log("Search results:", results); // Debugging statement
+      console.log("Search results:", results); 
       setMovies(results);
-      setError(null); // Clear any previous errors
+      setError(null); 
     } catch (error) {
-      console.error("Error fetching movies:", error); // Debugging statement
+      console.error("Error fetching movies:", error); 
       setError("Failed to fetch movies. Please try again.");
-      setMovies([]); // Clear previous results on error
+      setMovies([]); 
     }
   };
 

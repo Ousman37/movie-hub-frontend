@@ -1,7 +1,8 @@
-// src/api/tmdb.js
+
 import axios from "axios";
 
-const API_KEY = process.env.REACT_APP_TMDB_API_KEY;
+const API_KEY =
+  process.env.REACT_APP_TMDB_API_KEY || "d76d067f8e9e603924ff879c0232fe38";
 const BASE_URL = "https://api.themoviedb.org/3";
 
 export const fetchMovies = async (query) => {
@@ -29,7 +30,7 @@ export const fetchMovies = async (query) => {
 };
 
 export const fetchPopularMovies = async () => {
-  console.log(`Fetching popular movies`); // Debugging statement
+  console.log("Fetching popular movies"); // Debugging statement
   try {
     const response = await axios.get(`${BASE_URL}/movie/popular`, {
       params: {
@@ -79,7 +80,7 @@ export const fetchMovieDetails = async (movieId) => {
 };
 
 export const fetchGenres = async () => {
-  console.log(`Fetching genres`); // Debugging statement
+  console.log("Fetching genres"); // Debugging statement
   try {
     const response = await axios.get(`${BASE_URL}/genre/movie/list`, {
       params: {
@@ -126,7 +127,7 @@ export const fetchMoviesByGenre = async (genreId) => {
 };
 
 export const fetchNewReleases = async () => {
-  console.log(`Fetching new releases`); // Debugging statement
+  console.log("Fetching new releases"); // Debugging statement
   try {
     const response = await axios.get(`${BASE_URL}/movie/now_playing`, {
       params: {
@@ -147,4 +148,3 @@ export const fetchNewReleases = async () => {
     return [];
   }
 };
-

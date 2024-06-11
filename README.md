@@ -1,5 +1,7 @@
 # MovieHub Frontend
 
+![Movie Hub Logo](https://github.com/Ousman37/movie-hub-frontend/blob/main/moviehub.jpg)
+
 ![React](https://img.shields.io/badge/React-18.3.1-blue)
 ![Firebase](https://img.shields.io/badge/Firebase-10.12.2-orange)
 ![Axios](https://img.shields.io/badge/Axios-1.7.2-blue)

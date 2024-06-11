@@ -20,6 +20,7 @@ MovieHub is a web application that allows users to browse, search, and review mo
   - [Scripts](#scripts)
   - [Dependencies](#dependencies)
   - [DevDependencies](#devdependencies)
+  - [Demo](#demo)
   - [License](#license)
 
 ## Features
@@ -39,7 +40,7 @@ To install and run the project locally, follow these steps:
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/your-username/movie-hub-frontend.git
+    git clone git@github.com:Ousman37/movie-hub-frontend.git
     cd movie-hub-frontend
     ```
 
@@ -76,22 +77,26 @@ To install and run the project locally, follow these steps:
 
 ## Dependencies
 
-- **React:** 18.3.1
-- **Firebase:** 10.12.2
-- **Axios:** 1.7.2
-- **React Icons:** 5.2.1
-- **React Modal:** 3.16.1
-- **React Responsive Carousel:** 3.2.23
-- **React Router DOM:** 6.23.1
-- **React Scripts:** 5.0.1
-- **Web Vitals:** 2.1.4
+- **React:**
+- **Firebase:**
+- **Axios:**
+- **React Icons:**
+- **React Modal:**
+- **React Responsive Carousel:**
+- **React Router DOM:**
+- **React Scripts:**
+- **Web Vitals:**
 
 ## DevDependencies
 
 - **Babel Plugin Proposal Private Property In Object:** 7.21.11
-- **Autoprefixer:** 10.4.19
-- **PostCSS:** 8.4.38
-- **TailwindCSS:** 3.4.3
+- **Autoprefixer:**
+- **PostCSS:**
+- **TailwindCSS:**
+
+## Demo
+
+Check out the live demo [here](https://superb-croquembouche-8fdac1.netlify.app/).
 
 ## License
 
